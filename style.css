@@ -1,0 +1,33 @@
+.full-height{
+    height: 100vh;
+    
+}
+.image img{
+    width: 80%;
+    height: auto;
+}
+.side-image img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.color-chart img{
+    width: 12%;
+    height: auto;
+    margin: 0.5rem;
+}
+.img-thumbnail{
+    border: none;
+
+}
+.img-thumbnail:hover{
+    border: 1px solid black;
+}
+.side-image{
+    
+    width: 10%;
+    height: auto;
+}
+

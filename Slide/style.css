@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Switzer */
+@font-face {
+    font-family: 'Switzer';
+    src: url('//cdn.fontshare.com/wf/L7ZHBDKNPCJUMFDFCFPHHK4RV7OFYP35/ICIUL5ABL6JESZ73FR7QSQOMYTKCNNMY/LSZ7EF56Q5Y43X3QAZUVAEEKK7C4I7YK.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/L7ZHBDKNPCJUMFDFCFPHHK4RV7OFYP35/ICIUL5ABL6JESZ73FR7QSQOMYTKCNNMY/LSZ7EF56Q5Y43X3QAZUVAEEKK7C4I7YK.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/L7ZHBDKNPCJUMFDFCFPHHK4RV7OFYP35/ICIUL5ABL6JESZ73FR7QSQOMYTKCNNMY/LSZ7EF56Q5Y43X3QAZUVAEEKK7C4I7YK.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Switzer';
+    src: url('//cdn.fontshare.com/wf/OYB4CXKJQXKTNSLJMTDQOIVUL2V5EL7S/WYO2P7DQVV5RNXGMCUO2HL4RJP4VFUAS/6XPIMU23OJVRY676OG5YVJMWEHWICATX.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/OYB4CXKJQXKTNSLJMTDQOIVUL2V5EL7S/WYO2P7DQVV5RNXGMCUO2HL4RJP4VFUAS/6XPIMU23OJVRY676OG5YVJMWEHWICATX.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/OYB4CXKJQXKTNSLJMTDQOIVUL2V5EL7S/WYO2P7DQVV5RNXGMCUO2HL4RJP4VFUAS/6XPIMU23OJVRY676OG5YVJMWEHWICATX.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Switzer';
+    src: url('//cdn.fontshare.com/wf/HBNTRIISA5MEXGL5WPYI7CV2HIWTDV3Q/YDPDINVT673XLXNSTMLG4JNCZZMVVNPN/Y7SCNZJOT2MW5ADSGOFLDGH4TNL4JCQY.woff2') format('woff2'),
+         url('//cdn.fontshare.com/wf/HBNTRIISA5MEXGL5WPYI7CV2HIWTDV3Q/YDPDINVT673XLXNSTMLG4JNCZZMVVNPN/Y7SCNZJOT2MW5ADSGOFLDGH4TNL4JCQY.woff') format('woff'),
+         url('//cdn.fontshare.com/wf/HBNTRIISA5MEXGL5WPYI7CV2HIWTDV3Q/YDPDINVT673XLXNSTMLG4JNCZZMVVNPN/Y7SCNZJOT2MW5ADSGOFLDGH4TNL4JCQY.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+}
+.carousel .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+
+}
+.carousel .list .item img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 80%;
+    max-width: 80%;
+    right: 5%;
+    padding-right: 30%;
+    box-sizing: border-box;
+}
+.carousel .list .item .itemName{
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: orange;
+}
+.carousel .list .item .describtion
+{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-weight: bold;
+
+}
+
+.carousel .list .item .button-div
+{
+    margin: 20px 0 0 0;
+}
+.carousel .list .item button{
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: white;
+    letter-spacing: 4px;
+   
+
+}
+
+.thumbnail{
+    position: absolute;
+    bottom:50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.thumbnail .item{
+ 
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.thumbnail .item .content{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 10px;
+    
+}
+.thumbnail .item h1{
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-family: 'Switzer';
+}
+
+/* For arrow */
+.arrow{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.arrow button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    transition: .5s;
+
+}
+.arrow button:hover{
+    background: #eee;
+    color: #555;
+
+}
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+.carousel .list .item:nth-child(1).itemName,
+.carousel .list .item:nth-child(1).describtion,
+.carousel .list .item:nth-child(1).button-div{
+    -webkit-transform: translateY(50px);
+    -webkit-filter: blur(20px);
+    -webkit-opacity: 0;
+    -webkit-animation: showContent 0.5s 1s linear 1 forwards;
+
+}
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
